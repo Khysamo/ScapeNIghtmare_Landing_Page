@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruin Nightmare - Horror Dungeon Game</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Uncial+Antiqua&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-lg">
+    <div class="container">
+      <a class="navbar-brand game-title flicker" href="#inicio">Ruin Nightmare</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="#descarga">Descarga</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ficha">Ficha Técnica</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <header id="inicio" class="banner text-center text-light py-5">
+    <h1 class="game-title display-3 flicker">Ruin Nightmare</h1>
+    <p class="lead">Un viaje al terror en las profundidades</p>
+  </header>
+
+  <!-- Main Container -->
+  <main class="container fade-in my-5">
+    <!-- Widget Section -->
+    <section class="widget-section text-center mb-5">
+      <iframe frameborder="0" 
+              src="https://itch.io/embed-upload/16595717?color=000000" 
+              allowfullscreen 
+              width="640" 
+              height="380"
+              class="rounded shadow-lg border border-danger">
+        <a href="https://khysamo.itch.io/ruin-nightmare">Play Ruin Nightmare on itch.io</a>
+      </iframe>
+    </section>
+
+    <!-- Layout Two Columns -->
+    <div class="row g-4">
+      <!-- Main Content -->
+      <section id="galeria" class="col-lg-8">
+        <h2 class="section-title flicker mb-3">Descubre el Horror</h2>
+        <p>
+          Sumérgete en las profundidades de una mazmorra oscura, donde cada rincón oculta un secreto 
+          y cada sombra puede ser tu última visión. <strong>Ruin Nightmare</strong> es un videojuego de terror inmersivo 
+          que desafía tus sentidos y tu valentía.
+        </p>
+
+        <!-- Gallery -->
+        <div class="row g-3 gallery">
+          <div class="col-6">
+            <img src="screenshot1.jpg" class="img-fluid rounded shadow-sm" alt="Screenshot 1">
+          </div>
+          <div class="col-6">
+            <img src="screenshot2.jpg" class="img-fluid rounded shadow-sm" alt="Screenshot 2">
+          </div>
+          <div class="col-6">
+            <img src="screenshot3.jpg" class="img-fluid rounded shadow-sm" alt="Screenshot 3">
+          </div>
+          <div class="col-6">
+            <img src="screenshot4.jpg" class="img-fluid rounded shadow-sm" alt="Screenshot 4">
+          </div>
+        </div>
+      </section>
+
+      <!-- Sidebar -->
+      <aside id="descarga" class="col-lg-4">
+        <div class="p-4 bg-dark rounded shadow-lg">
+          <button class="btn btn-danger w-100 mb-4 flicker">Download</button>
+          <div class="platforms mb-4">
+            <h3 class="text-danger">Plataformas</h3>
+            <ul class="list-unstyled">
+              <li>🖥️ PC</li>
+              <li>🎮 Consola</li>
+              <li>💻 Mac</li>
+            </ul>
+          </div>
+          <div id="ficha" class="tech-info">
+            <h3 class="text-danger">Ficha Técnica</h3>
+            <ul class="list-unstyled">
+              <li>Motor: Unity</li>
+              <li>Género: Horror Dungeon</li>
+              <li>Idioma: Español / Inglés</li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-secondary py-4 bg-dark">
+    <p>&copy; 2026 Ruin Nightmare. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>

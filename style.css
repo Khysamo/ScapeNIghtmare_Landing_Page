@@ -1,0 +1,98 @@
+/* General */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #000;
+  color: #ddd;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Vignette */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(0,0,0,0) 70%, rgba(0,0,0,0.9) 100%);
+  z-index: 1;
+}
+
+/* Navbar */
+.navbar {
+  font-family: 'Cinzel', serif;
+}
+.nav-link {
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+.nav-link:hover {
+  color: #8b0000 !important;
+  text-shadow: 0 0 10px #8b0000;
+}
+
+/* Banner */
+.banner {
+  background: linear-gradient(to bottom, #111, #000);
+}
+.game-title {
+  font-family: 'Cinzel', serif;
+  color: #8b0000;
+  text-shadow: 0 0 20px #8b0000;
+}
+
+/* Section Titles */
+.section-title {
+  font-family: 'Uncial Antiqua', cursive;
+  color: #2f4f4f;
+  text-shadow: 0 0 10px #2f4f4f;
+}
+
+/* Gallery Hover */
+.gallery img {
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2) saturate(1.2);
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeInUp 1.5s ease forwards;
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.flicker {
+  animation: flicker 3s infinite;
+}
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+    text-shadow: 0 0 15px #8b0000;
+  }
+  20%, 24%, 55% {
+    opacity: 0.8;
+    text-shadow: 0 0 8px #8b0000;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sidebar {
+    margin-top: 20px;
+    animation: slideIn 1s ease forwards;
+  }
+}
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* Banner con parallax */
+.banner {
+  background: url("dungeon-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+
